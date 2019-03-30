@@ -1,0 +1,10 @@
+/*----------PARTS START-------------*/
+section.team-section .avatar img {
+  max-width: 200px;
+  height: auto;
+}
+section.team-section .avatar img.rounded-circle {
+  max-width: 150px;
+}
+
+/*----------PARTS ENDS-------------*/

@@ -1,0 +1,11 @@
+/*----------PARTS START-------------*/
+.collapsible .active .rotate-icon {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: all 150ms ease-in 0s;
+  -o-transition: all 150ms ease-in 0s;
+  transition: all 150ms ease-in 0s;
+}
+
+/*----------PARTS ENDS-------------*/

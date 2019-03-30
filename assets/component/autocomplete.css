@@ -1,0 +1,50 @@
+/*----------PARTS START-------------*/
+.mdb-autocomplete {
+  margin-bottom: 1px;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
+button.mdb-autocomplete-clear {
+  position: absolute;
+  z-index: 2;
+  top: 0.5rem;
+  right: 0;
+  visibility: hidden;
+  border: none;
+  background: transparent;
+}
+button.mdb-autocomplete-clear svg {
+  fill: #a6a6a6;
+}
+
+.mdb-autocomplete-wrap {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  list-style-type: none;
+  overflow-y: auto;
+  max-height: 210px;
+  padding-left: 0;
+  background: #fff;
+}
+.mdb-autocomplete-wrap li {
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+.mdb-autocomplete-wrap li:hover {
+  background: #eeeeee;
+}
+
+.form-inline .md-form .form-control.mdb-autocomplete {
+  width: 15rem;
+}
+
+/*----------PARTS ENDS-------------*/

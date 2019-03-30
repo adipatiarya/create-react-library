@@ -1,0 +1,137 @@
+/*----------PARTS START-------------*/
+.range-field {
+  position: relative;
+}
+
+input[type='range'] {
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 15px 0px;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #fff;
+  /* fix for FF unable to apply focus style bug  */
+}
+input[type='range']:focus {
+  outline: none;
+}
+input[type='range'] + .thumb {
+  position: absolute;
+  border: none;
+  height: 0;
+  width: 0;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #4285f4;
+  top: 10px;
+  margin-left: -6px;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+input[type='range'] + .thumb .value {
+  display: block;
+  width: 30px;
+  text-align: center;
+  color: #4285f4;
+  font-size: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+input[type='range'] + .thumb.active {
+  -webkit-border-radius: 50% 50% 50% 0;
+  border-radius: 50% 50% 50% 0;
+}
+input[type='range'] + .thumb.active .value {
+  color: #fff;
+  margin-left: -1px;
+  margin-top: 8px;
+  font-size: 10px;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  height: 3px;
+  background: #c2c0c2;
+  border: none;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  height: 14px;
+  width: 14px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #4285f4;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  margin: -5px 0 0 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+input[type='range']:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+input[type='range']::-moz-range-track {
+  /*required for proper track sizing in FF*/
+  height: 3px;
+  background: #c2c0c2;
+  border: none;
+}
+input[type='range']::-moz-range-thumb {
+  border: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #4285f4;
+  margin-top: -5px;
+}
+input[type='range']:-moz-focusring {
+  /*hide the outline behind the border*/
+  outline: 1px solid #fff;
+  outline-offset: -1px;
+}
+input[type='range']:focus::-moz-range-track {
+  background: #c2c0c2;
+}
+input[type='range']::-ms-track {
+  height: 3px;
+  background: transparent;
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  border-color: transparent;
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-width: 6px 0;
+  color: transparent;
+  /*remove default tick marks*/
+}
+input[type='range']::-ms-fill-lower {
+  background: #c2c0c2;
+}
+input[type='range']::-ms-fill-upper {
+  background: #c2c0c2;
+}
+input[type='range']::-ms-thumb {
+  border: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #4285f4;
+}
+input[type='range']:focus::-ms-fill-lower {
+  background: #c2c0c2;
+}
+input[type='range']:focus::-ms-fill-upper {
+  background: #c2c0c2;
+}
+
+/*----------PARTS ENDS-------------*/

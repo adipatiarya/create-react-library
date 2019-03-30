@@ -1,0 +1,184 @@
+/*----------PARTS START-------------*/
+.view .full-bg-img {
+  height: 100%;
+}
+
+.view .full-bg-img,
+.view .full-bg-img video {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.full-height,
+.full-height body,
+.full-height header,
+.full-height header .view {
+  height: 100%;
+}
+
+.side-nav .double-navbar .bc-min {
+  padding: 5px 10px;
+}
+.side-nav .double-navbar .bc-min .button-collapse {
+  padding-left: 0px;
+}
+
+.no-padding .fa {
+  padding: 0;
+}
+
+.ql-modal .modal-dialog,
+.product-panel .modal-dialog {
+  max-width: none;
+  width: auto;
+  margin: 2rem;
+}
+
+.ql-modal .modal-header,
+.product-panel .modal-header {
+  text-align: center;
+}
+
+.ql-modal .price .badge,
+.product-panel .price .badge {
+  background-color: rgba(244, 67, 54, 0.7);
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.ql-modal .price p,
+.product-panel .price p {
+  display: inline-block;
+  font-size: 1.3rem;
+}
+.ql-modal .price p .price-before,
+.product-panel .price p .price-before {
+  color: #000;
+  text-decoration: line-through;
+  margin-left: 0.5rem;
+}
+.ql-modal .price p .price-after,
+.product-panel .price p .price-after {
+  font-size: 1.7rem;
+  color: #4caf50;
+}
+
+.ql-modal .media img,
+.product-panel .media img {
+  max-width: 60px;
+}
+
+@media (max-width: 1200px) {
+  .ql-modal {
+    padding-left: 0;
+  }
+  .ql-modal .modal-dialog {
+    margin: 0;
+  }
+}
+
+.pricing-card .heading h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.pricing-card.card-overlay {
+  display: block;
+  color: #fff;
+}
+.pricing-card.card-overlay p {
+  color: #fff;
+}
+.pricing-card.card-overlay .price {
+  padding-top: 0;
+}
+
+.naked-card h5 {
+  margin-top: 1.2rem;
+}
+
+.naked-card .price {
+  padding-top: 0rem;
+}
+
+.naked-card li p {
+  color: #757575;
+}
+.naked-card li p strong {
+  color: #616161;
+}
+
+.no-radius {
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.section-blog-fw .view img {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.section-blog-fw .jumbotron {
+  text-align: center;
+}
+
+.section-blog-fw h2 {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.section-blog-fw h2 a {
+  color: #424242;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.section-blog-fw h2 a:hover {
+  color: #616161;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.section-blog-fw .excerpt,
+.section-blog-fw .post-text {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+}
+@media (max-width: 992px) {
+  .section-blog-fw .excerpt,
+  .section-blog-fw .post-text {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+.section-blog-fw hr {
+  display: block;
+}
+
+.personal-sm a .fa {
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.personal-sm a .fa:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.comments-list .avatar,
+.reply-form .avatar {
+  max-width: 100px;
+}
+
+.comments-list .comment-date,
+.reply-form .comment-date {
+  color: #666666;
+}
+
+/*----------PARTS ENDS-------------*/

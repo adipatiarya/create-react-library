@@ -1,0 +1,46 @@
+/*----------PARTS START-------------*/
+.testimonial-carousel .carousel-control {
+  background-image: none;
+  top: 50%;
+  -webkit-transform: translateY(-35%);
+  -ms-transform: translateY(-35%);
+  transform: translateY(-35%);
+}
+.testimonial-carousel .carousel-control:before {
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.testimonial-carousel .carousel-control:hover:before {
+  color: #000;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.testimonial-carousel .carousel-control.left {
+  left: 6%;
+}
+.testimonial-carousel .carousel-control.left:before {
+  content: '\2039';
+}
+.testimonial-carousel .carousel-control.right {
+  right: 6%;
+}
+.testimonial-carousel .carousel-control.right:before {
+  content: '\203a';
+}
+
+.testimonial-carousel .testimonial {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+.testimonial-carousel .testimonial .avatar img {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+    0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  max-width: 170px;
+}
+
+/*----------PARTS ENDS-------------*/

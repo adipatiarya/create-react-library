@@ -1,0 +1,112 @@
+/*----------PARTS START-------------*/
+.edge-header {
+  display: block;
+  height: 278px;
+  background-color: #ccc;
+}
+
+.free-bird {
+  margin-top: -100px;
+}
+
+.table a {
+  margin-right: 1rem !important;
+}
+
+.table fieldset.form-check {
+  margin-bottom: 0;
+}
+
+.table fieldset label.form-check-label {
+  height: 0.94rem;
+}
+
+.product-table img {
+  max-height: 150px;
+  min-width: 50px;
+}
+
+.product-table td {
+  vertical-align: middle;
+}
+
+.streak {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+.streak.streak-md {
+  height: 400px;
+}
+@media (max-width: 736px) {
+  .streak.streak-md {
+    height: 300px;
+  }
+}
+.streak.streak-lg {
+  height: 650px;
+}
+@media (max-width: 450px) {
+  .streak.streak-lg {
+    height: 900px;
+  }
+}
+.streak.streak-long {
+  height: 200px;
+}
+@media (max-width: 450px) {
+  .streak.streak-long {
+    height: 620px;
+  }
+}
+.streak.streak-long-2 {
+  height: 400px;
+}
+@media (max-width: 450px) {
+  .streak.streak-long-2 {
+    height: 700px;
+  }
+}
+.streak.streak-photo {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 1366px) {
+  .streak.streak-photo {
+    background-attachment: fixed;
+  }
+}
+.streak.no-flex {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  height: auto;
+}
+
+.purple-gradient {
+  background: -webkit-linear-gradient(50deg, #ff6ec4, #7873f5) !important;
+  background: -o-linear-gradient(50deg, #ff6ec4, #7873f5) !important;
+  background: linear-gradient(40deg, #ff6ec4, #7873f5) !important;
+}
+
+.peach-gradient {
+  background: -webkit-linear-gradient(50deg, #ffd86f, #fc6262) !important;
+  background: -o-linear-gradient(50deg, #ffd86f, #fc6262) !important;
+  background: linear-gradient(40deg, #ffd86f, #fc6262) !important;
+}
+
+.aqua-gradient {
+  background: -webkit-linear-gradient(50deg, #2096ff, #05ffa3) !important;
+  background: -o-linear-gradient(50deg, #2096ff, #05ffa3) !important;
+  background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
+}
+
+.blue-gradient {
+  background: -webkit-linear-gradient(50deg, #45cafc, #303f9f) !important;
+  background: -o-linear-gradient(50deg, #45cafc, #303f9f) !important;
+  background: linear-gradient(40deg, #45cafc, #303f9f) !important;
+}
+
+/*----------PARTS ENDS-------------*/

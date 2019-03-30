@@ -1,0 +1,165 @@
+/*----------PARTS START-------------*/
+.dropdown .dropdown-menu .dropdown-item:active {
+  background-color: #757575;
+}
+
+.dropdown .dropdown-menu,
+.dropup .dropdown-menu,
+.dropleft .dropdown-menu,
+.dropright .dropdown-menu {
+  padding: 0.5rem;
+}
+.dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover,
+.dropdown .dropdown-menu.dropdown-primary .dropdown-item:active,
+.dropup .dropdown-menu.dropdown-primary .dropdown-item:hover,
+.dropup .dropdown-menu.dropdown-primary .dropdown-item:active,
+.dropleft .dropdown-menu.dropdown-primary .dropdown-item:hover,
+.dropleft .dropdown-menu.dropdown-primary .dropdown-item:active,
+.dropright .dropdown-menu.dropdown-primary .dropdown-item:hover,
+.dropright .dropdown-menu.dropdown-primary .dropdown-item:active {
+  background-color: #4285f4 !important;
+}
+.dropdown .dropdown-menu.dropdown-danger .dropdown-item:hover,
+.dropdown .dropdown-menu.dropdown-danger .dropdown-item:active,
+.dropup .dropdown-menu.dropdown-danger .dropdown-item:hover,
+.dropup .dropdown-menu.dropdown-danger .dropdown-item:active,
+.dropleft .dropdown-menu.dropdown-danger .dropdown-item:hover,
+.dropleft .dropdown-menu.dropdown-danger .dropdown-item:active,
+.dropright .dropdown-menu.dropdown-danger .dropdown-item:hover,
+.dropright .dropdown-menu.dropdown-danger .dropdown-item:active {
+  background-color: #cc0000 !important;
+}
+.dropdown .dropdown-menu.dropdown-default .dropdown-item:hover,
+.dropdown .dropdown-menu.dropdown-default .dropdown-item:active,
+.dropup .dropdown-menu.dropdown-default .dropdown-item:hover,
+.dropup .dropdown-menu.dropdown-default .dropdown-item:active,
+.dropleft .dropdown-menu.dropdown-default .dropdown-item:hover,
+.dropleft .dropdown-menu.dropdown-default .dropdown-item:active,
+.dropright .dropdown-menu.dropdown-default .dropdown-item:hover,
+.dropright .dropdown-menu.dropdown-default .dropdown-item:active {
+  background-color: #2bbbad !important;
+}
+.dropdown .dropdown-menu.dropdown-secondary .dropdown-item:hover,
+.dropdown .dropdown-menu.dropdown-secondary .dropdown-item:active,
+.dropup .dropdown-menu.dropdown-secondary .dropdown-item:hover,
+.dropup .dropdown-menu.dropdown-secondary .dropdown-item:active,
+.dropleft .dropdown-menu.dropdown-secondary .dropdown-item:hover,
+.dropleft .dropdown-menu.dropdown-secondary .dropdown-item:active,
+.dropright .dropdown-menu.dropdown-secondary .dropdown-item:hover,
+.dropright .dropdown-menu.dropdown-secondary .dropdown-item:active {
+  background-color: #aa66cc !important;
+}
+.dropdown .dropdown-menu.dropdown-success .dropdown-item:hover,
+.dropdown .dropdown-menu.dropdown-success .dropdown-item:active,
+.dropup .dropdown-menu.dropdown-success .dropdown-item:hover,
+.dropup .dropdown-menu.dropdown-success .dropdown-item:active,
+.dropleft .dropdown-menu.dropdown-success .dropdown-item:hover,
+.dropleft .dropdown-menu.dropdown-success .dropdown-item:active,
+.dropright .dropdown-menu.dropdown-success .dropdown-item:hover,
+.dropright .dropdown-menu.dropdown-success .dropdown-item:active {
+  background-color: #00c851 !important;
+}
+.dropdown .dropdown-menu.dropdown-info .dropdown-item:hover,
+.dropdown .dropdown-menu.dropdown-info .dropdown-item:active,
+.dropup .dropdown-menu.dropdown-info .dropdown-item:hover,
+.dropup .dropdown-menu.dropdown-info .dropdown-item:active,
+.dropleft .dropdown-menu.dropdown-info .dropdown-item:hover,
+.dropleft .dropdown-menu.dropdown-info .dropdown-item:active,
+.dropright .dropdown-menu.dropdown-info .dropdown-item:hover,
+.dropright .dropdown-menu.dropdown-info .dropdown-item:active {
+  background-color: #33b5e5 !important;
+}
+.dropdown .dropdown-menu.dropdown-warning .dropdown-item:hover,
+.dropdown .dropdown-menu.dropdown-warning .dropdown-item:active,
+.dropup .dropdown-menu.dropdown-warning .dropdown-item:hover,
+.dropup .dropdown-menu.dropdown-warning .dropdown-item:active,
+.dropleft .dropdown-menu.dropdown-warning .dropdown-item:hover,
+.dropleft .dropdown-menu.dropdown-warning .dropdown-item:active,
+.dropright .dropdown-menu.dropdown-warning .dropdown-item:hover,
+.dropright .dropdown-menu.dropdown-warning .dropdown-item:active {
+  background-color: #ffbb33 !important;
+}
+.dropdown .dropdown-menu.dropdown-dark .dropdown-item:hover,
+.dropdown .dropdown-menu.dropdown-dark .dropdown-item:active,
+.dropup .dropdown-menu.dropdown-dark .dropdown-item:hover,
+.dropup .dropdown-menu.dropdown-dark .dropdown-item:active,
+.dropleft .dropdown-menu.dropdown-dark .dropdown-item:hover,
+.dropleft .dropdown-menu.dropdown-dark .dropdown-item:active,
+.dropright .dropdown-menu.dropdown-dark .dropdown-item:hover,
+.dropright .dropdown-menu.dropdown-dark .dropdown-item:active {
+  background-color: #2e2e2e !important;
+}
+.dropdown .dropdown-menu.dropdown-ins .dropdown-item:hover,
+.dropdown .dropdown-menu.dropdown-ins .dropdown-item:active,
+.dropup .dropdown-menu.dropdown-ins .dropdown-item:hover,
+.dropup .dropdown-menu.dropdown-ins .dropdown-item:active,
+.dropleft .dropdown-menu.dropdown-ins .dropdown-item:hover,
+.dropleft .dropdown-menu.dropdown-ins .dropdown-item:active,
+.dropright .dropdown-menu.dropdown-ins .dropdown-item:hover,
+.dropright .dropdown-menu.dropdown-ins .dropdown-item:active {
+  background-color: #2e5e86 !important;
+}
+.dropdown .dropdown-menu .dropdown-item,
+.dropup .dropdown-menu .dropdown-item,
+.dropleft .dropdown-menu .dropdown-item,
+.dropright .dropdown-menu .dropdown-item {
+  padding: 0.5rem;
+  margin-left: 0;
+  font-size: 0.9rem;
+}
+.dropdown .dropdown-menu .dropdown-item.disabled,
+.dropup .dropdown-menu .dropdown-item.disabled,
+.dropleft .dropdown-menu .dropdown-item.disabled,
+.dropright .dropdown-menu .dropdown-item.disabled {
+  color: #868e96;
+}
+.dropdown .dropdown-menu .dropdown-item.disabled:hover,
+.dropdown .dropdown-menu .dropdown-item.disabled:active,
+.dropdown .dropdown-menu .dropdown-item.disabled:focus,
+.dropup .dropdown-menu .dropdown-item.disabled:hover,
+.dropup .dropdown-menu .dropdown-item.disabled:active,
+.dropup .dropdown-menu .dropdown-item.disabled:focus,
+.dropleft .dropdown-menu .dropdown-item.disabled:hover,
+.dropleft .dropdown-menu .dropdown-item.disabled:active,
+.dropleft .dropdown-menu .dropdown-item.disabled:focus,
+.dropright .dropdown-menu .dropdown-item.disabled:hover,
+.dropright .dropdown-menu .dropdown-item.disabled:active,
+.dropright .dropdown-menu .dropdown-item.disabled:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #868e96 !important;
+  background-color: transparent !important;
+}
+.dropdown .dropdown-menu .dropdown-item:hover,
+.dropdown .dropdown-menu .dropdown-item:active,
+.dropup .dropdown-menu .dropdown-item:hover,
+.dropup .dropdown-menu .dropdown-item:active,
+.dropleft .dropdown-menu .dropdown-item:hover,
+.dropleft .dropdown-menu .dropdown-item:active,
+.dropright .dropdown-menu .dropdown-item:hover,
+.dropright .dropdown-menu .dropdown-item:active {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+    0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  background-color: #4285f4;
+  -webkit-border-radius: 0.125rem;
+  border-radius: 0.125rem;
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.navbar-nav .dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-menu.animated {
+  /* Speed up animations */
+  -webkit-animation-duration: 0.55s;
+  animation-duration: 0.55s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+/*----------PARTS ENDS-------------*/

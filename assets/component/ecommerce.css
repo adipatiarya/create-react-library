@@ -1,0 +1,76 @@
+/*----------PARTS START-------------*/
+.collection-card .stripe {
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  text-align: center;
+  padding: 1.2rem;
+}
+.collection-card .stripe.dark {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.collection-card .stripe.dark a p {
+  color: #eeeeee;
+}
+.collection-card .stripe.light {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.collection-card .stripe.light a p {
+  color: #424242;
+}
+.collection-card .stripe a p {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.25rem;
+}
+
+.rating {
+  color: #ffa000;
+  list-style-type: none;
+  padding: 0;
+}
+.rating li {
+  display: inline-block;
+}
+
+.cart-modal .table,
+.cart-modal th {
+  text-align: center;
+}
+
+.cart-modal .table .total {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.cart-modal .table .fa-remove {
+  color: #4285f4;
+}
+
+.card.card-ecommerce .card-footer {
+  background-color: transparent;
+}
+.card.card-ecommerce .card-footer .discount {
+  color: #9e9e9e;
+}
+.card.card-ecommerce .card-footer a {
+  color: #757575;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.card.card-ecommerce .card-footer a:hover {
+  color: #d50000;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.card.card-ecommerce .card-footer a.active {
+  color: #d50000;
+}
+
+.product-table .btn.btn-sm {
+  padding: 0.3rem 0.6rem;
+}
+
+/*----------PARTS ENDS-------------*/

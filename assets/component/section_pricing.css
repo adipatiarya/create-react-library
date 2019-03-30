@@ -1,0 +1,86 @@
+/*----------PARTS START-------------*/
+.pricing-card {
+  text-align: center;
+}
+.pricing-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+.pricing-card .header {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+    0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.pricing-card .option {
+  padding: 2.5rem;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.pricing-card .price {
+  position: relative;
+  padding-top: 3.94rem;
+}
+.pricing-card .price .number {
+  font-size: 5rem;
+  padding: 1.5rem;
+  font-weight: 300;
+}
+.pricing-card .price .number:before {
+  content: '$';
+  position: absolute;
+  font-size: 1.88rem;
+  margin-left: -1.2rem;
+  margin-top: 0.7rem;
+}
+.pricing-card .price .number:after {
+  content: '/mo';
+  position: absolute;
+  font-size: 1.88rem;
+  margin-top: 3rem;
+}
+.pricing-card .price .version {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-border-radius: 0.25rem 0.25rem 0 0;
+  border-radius: 0.25rem 0.25rem 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.pricing-card .striped {
+  padding: 1rem;
+}
+.pricing-card .striped li {
+  border-bottom: 1px solid rgba(238, 238, 238, 0.298039);
+  margin-bottom: 1rem;
+}
+.pricing-card .striped.green-striped li {
+  border-color: #33c28a;
+}
+.pricing-card .striped.orange-striped li {
+  border-color: #e97d63;
+}
+.pricing-card .striped.purple-striped li {
+  border-color: #963c94;
+}
+.pricing-card .card-background {
+  background-color: #28283f;
+  -webkit-border-radius: 0 0 0.25rem 0.25rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.card .card-circle {
+  border: 2px solid #e0e0e0;
+  height: 7.5rem;
+  width: 7.5rem;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.card .card-circle .fa {
+  font-size: 4rem;
+}
+
+/*----------PARTS ENDS-------------*/

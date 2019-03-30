@@ -1,0 +1,513 @@
+/*----------PARTS START-------------*/
+/* ==========================================================================
+   $BASE-TIME-PICKER
+   ========================================================================== */
+/**
+ * The list of times.
+ */
+.picker__list {
+  list-style: none;
+  padding: 0.75em 0 4.2em;
+  margin: 0;
+}
+
+/**
+ * The times on the clock.
+ */
+.picker__list-item {
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  margin-bottom: -1px;
+  position: relative;
+  padding: 0.75em 1.25em;
+  /* Hovered time */
+}
+@media (min-height: 46.75em) {
+  .picker__list-item {
+    padding: 0.5em 1em;
+  }
+}
+.picker__list-item:hover {
+  cursor: pointer;
+  background: #b1dcfb;
+  border-color: #0089ec;
+  z-index: 10;
+}
+
+/* Highlighted and hovered/focused time */
+.picker__list-item--highlighted {
+  border-color: #0089ec;
+  z-index: 10;
+}
+
+.picker__list-item--highlighted:hover,
+.picker--focused .picker__list-item--highlighted {
+  cursor: pointer;
+  color: #000;
+  background: #b1dcfb;
+}
+
+/* Selected and hovered/focused time */
+.picker__list-item--selected,
+.picker__list-item--selected:hover,
+.picker--focused .picker__list-item--selected {
+  background: #0089ec;
+  z-index: 10;
+}
+
+/* Disabled time */
+.picker__list-item--disabled,
+.picker__list-item--disabled:hover,
+.picker--focused .picker__list-item--disabled {
+  background: #f5f5f5;
+  border-color: #f5f5f5;
+  color: #dddddd;
+  cursor: default;
+  border-color: #dddddd;
+  z-index: auto;
+}
+
+/**
+ * The clear button
+ */
+.picker--time .picker__button--clear {
+  display: block;
+  width: 80%;
+  margin: 1em auto 0;
+  padding: 1em 1.25em;
+  background: none;
+  border: 0;
+  font-weight: 500;
+  font-size: 0.67em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #666666;
+}
+.picker--time .picker__button--clear:hover,
+.picker--time .picker__button--clear:focus {
+  color: #000;
+  background: #b1dcfb;
+  border-color: #ee2200;
+  cursor: pointer;
+  outline: none;
+}
+.picker--time .picker__button--clear:before {
+  top: -0.25em;
+  color: #666666;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   $DEFAULT-TIME-PICKER
+   ========================================================================== */
+/**
+ * The frame the bounds the time picker.
+ */
+.picker--time .picker__frame {
+  min-width: 16rem;
+  max-width: 20rem;
+}
+
+/**
+ * The picker box.
+ */
+.picker--time .picker__box {
+  font-size: 1em;
+  background: #f2f2f2;
+  padding: 0;
+}
+@media (min-height: 40.125em) {
+  .picker--time .picker__box {
+    margin-bottom: 5em;
+  }
+}
+
+/*!
+ * ClockPicker v0.0.7 for jQuery (http://weareoutman.github.io/clockpicker/)
+ * Copyright 2014 Wang Shenwei.
+ * Licensed under MIT (https://github.com/weareoutman/clockpicker/blob/gh-pages/LICENSE)
+ *
+ * Further modified
+ * Copyright 2015 Ching Yaw Hao.
+ *
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+.picker__date-display {
+  text-align: center;
+  background-color: #4285f4;
+  padding-bottom: 0.9375rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.picker__date-display .clockpicker-display {
+  vertical-align: middle;
+  display: inline-block;
+  margin: auto;
+  height: 5.3125rem;
+  font-size: 4.375rem;
+  padding: 0.625rem;
+  padding-bottom: 0px;
+  color: #b2dfdb;
+}
+.picker__date-display .clockpicker-display .clockpicker-display-column {
+  float: left;
+}
+.picker__date-display
+  .clockpicker-display
+  .clockpicker-display-column
+  .clockpicker-span-hours.text-primary,
+.picker__date-display
+  .clockpicker-display
+  .clockpicker-display-column
+  .clockpicker-span-minutes.text-primary,
+.picker__date-display
+  .clockpicker-display
+  .clockpicker-display-column
+  #click-am.text-primary,
+.picker__date-display
+  .clockpicker-display
+  .clockpicker-display-column
+  #click-pm.text-primary {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+.picker__date-display
+  .clockpicker-display
+  .clockpicker-display-column
+  #click-am,
+.picker__date-display
+  .clockpicker-display
+  .clockpicker-display-column
+  #click-pm {
+  cursor: pointer;
+}
+.picker__date-display .clockpicker-display .clockpicker-display-am-pm {
+  padding-left: 0.3125rem;
+  vertical-align: bottom;
+  height: 5.3125rem;
+}
+.picker__date-display
+  .clockpicker-display
+  .clockpicker-display-am-pm
+  .clockpicker-span-am-pm {
+  display: inline-block;
+  font-size: 1.4375rem;
+  line-height: 1.5625rem;
+  color: #b2dfdb;
+}
+.picker__date-display .clockpicker-display .clockpicker-span-hours,
+.picker__date-display .clockpicker-display .clockpicker-span-minutes {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: color 500ms;
+  -o-transition: color 500ms;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+.clockpicker-display {
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin: auto;
+  height: 5.3125rem;
+  font-size: 4.375rem;
+  padding: 0.625rem;
+  padding-bottom: 0px;
+  color: #b2dfdb;
+}
+.clockpicker-display .clockpicker-display-column {
+  float: left;
+}
+.clockpicker-display
+  .clockpicker-display-column
+  .clockpicker-span-hours.text-primary,
+.clockpicker-display
+  .clockpicker-display-column
+  .clockpicker-span-minutes.text-primary,
+.clockpicker-display .clockpicker-display-column #click-am.text-primary,
+.clockpicker-display .clockpicker-display-column #click-pm.text-primary {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+.clockpicker-display .clockpicker-display-column #click-am,
+.clockpicker-display .clockpicker-display-column #click-pm {
+  cursor: pointer;
+}
+.clockpicker-display .clockpicker-display-am-pm {
+  padding-left: 0.3125rem;
+  vertical-align: bottom;
+  height: 5.3125rem;
+}
+.clockpicker-display .clockpicker-display-am-pm .clockpicker-span-am-pm {
+  display: inline-block;
+  font-size: 1.4375rem;
+  line-height: 1.5625rem;
+  color: #b2dfdb;
+}
+.clockpicker-display .clockpicker-span-hours,
+.clockpicker-display .clockpicker-span-minutes {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  cursor: pointer;
+  -webkit-transition: color 500ms;
+  -o-transition: color 500ms;
+  transition: color 500ms;
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.clockpicker-moving {
+  cursor: move;
+}
+
+.clockpicker-plate {
+  background-color: #eeeeee;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 16.875rem;
+  height: 16.875rem;
+  overflow: visible;
+  position: relative;
+  margin: auto;
+  margin-top: 1.25rem;
+  /* Disable text selection highlighting. Thanks to Hermanya */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.clockpicker-plate .clockpicker-canvas,
+.clockpicker-plate .clockpicker-dial {
+  width: 16.875rem;
+  height: 16.875rem;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+.clockpicker-plate .clockpicker-dial {
+  -webkit-transition: opacity 350ms, -webkit-transform 350ms;
+  transition: opacity 350ms, -webkit-transform 350ms;
+  -o-transition: transform 350ms, opacity 350ms;
+  transition: transform 350ms, opacity 350ms;
+  transition: transform 350ms, opacity 350ms, -webkit-transform 350ms;
+}
+.clockpicker-plate .clockpicker-dial .clockpicker-tick {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #666666;
+  line-height: 2.5rem;
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: background-color 300ms;
+  -o-transition: background-color 300ms;
+  transition: background-color 300ms;
+  background-color: rgba(0, 150, 136, 0);
+}
+.clockpicker-plate .clockpicker-dial .clockpicker-tick.active,
+.clockpicker-plate .clockpicker-dial .clockpicker-tick:hover {
+  background-color: rgba(0, 150, 136, 0.25);
+}
+.clockpicker-plate .clockpicker-minutes {
+  visibility: hidden;
+}
+.clockpicker-plate .clockpicker-dial-out {
+  opacity: 0;
+}
+.clockpicker-plate .clockpicker-hours.clockpicker-dial-out {
+  -webkit-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+.clockpicker-plate .clockpicker-minutes.clockpicker-dial-out {
+  -webkit-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  transform: scale(0.8, 0.8);
+}
+
+.clockpicker-canvas {
+  -webkit-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+.clockpicker-canvas line {
+  stroke: rgba(0, 150, 136, 0.25);
+  stroke-width: 1;
+}
+
+.clockpicker-canvas-out {
+  opacity: 0.25;
+}
+
+.clockpicker-canvas-bearing {
+  stroke: none;
+  fill: rgba(0, 77, 64, 0.75);
+}
+
+.clockpicker-canvas-fg {
+  stroke: none;
+  fill: rgba(0, 77, 64, 0);
+}
+.clockpicker-canvas-fg.active {
+  fill: rgba(0, 77, 64, 0.5);
+}
+
+.clockpicker-canvas-bg {
+  stroke: none;
+  fill: rgba(0, 150, 136, 0.25);
+}
+
+.clockpicker-canvas-bg-trans {
+  fill: rgba(0, 150, 136, 0.25);
+}
+
+.clockpicker-am-pm-block {
+  margin-top: -0.625rem;
+  width: 100%;
+  height: 3.125rem;
+}
+.clockpicker-am-pm-block .clockpicker-button.am-button {
+  height: 2.8125rem;
+  width: 2.8125rem;
+  float: left;
+  border: 0;
+}
+.clockpicker-am-pm-block .clockpicker-button.pm-button {
+  height: 2.8125rem;
+  width: 2.8125rem;
+  float: right;
+  border: 0;
+}
+
+.btn-floating.btn-flat {
+  color: #fff;
+  padding: 0;
+  background: #4285f4;
+}
+.btn-floating.btn-flat:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-floating.btn-flat:hover,
+.btn-floating.btn-flat:focus {
+  background-color: #5a95f5 !important;
+}
+.btn-floating.btn-flat.active {
+  background-color: #0b51c5 !important;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+    0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.picker__footer .clockpicker-button {
+  margin: auto;
+  margin-top: 0.9375rem;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.picker__footer .clockpicker-button:focus {
+  background-color: transparent;
+}
+.picker__footer .clockpicker-button:active {
+  background-color: rgba(0, 150, 136, 0.25);
+}
+
+.darktheme .picker__box {
+  background-color: #212121;
+}
+.darktheme .picker__box .picker__date-display {
+  background-color: transparent;
+}
+.darktheme .picker__box .picker__calendar-container .clockpicker-plate {
+  background-color: transparent;
+}
+.darktheme
+  .picker__box
+  .picker__calendar-container
+  .clockpicker-plate
+  .clockpicker-tick {
+  background-color: rgba(255, 64, 129, 0);
+}
+.darktheme
+  .picker__box
+  .picker__calendar-container
+  .clockpicker-plate
+  .clockpicker-tick.active,
+.darktheme
+  .picker__box
+  .picker__calendar-container
+  .clockpicker-plate
+  .clockpicker-tick:hover {
+  background-color: rgba(255, 64, 129, 0.25);
+}
+.darktheme
+  .picker__box
+  .picker__calendar-container
+  .clockpicker-plate
+  .clockpicker-canvas
+  line {
+  stroke: rgba(255, 64, 129, 0.25);
+}
+.darktheme
+  .picker__box
+  .picker__calendar-container
+  .clockpicker-plate
+  .clockpicker-canvas-bearing {
+  fill: #fff;
+}
+.darktheme
+  .picker__box
+  .picker__calendar-container
+  .clockpicker-plate
+  .clockpicker-canvas-fg {
+  fill: rgba(255, 64, 129, 0);
+}
+.darktheme
+  .picker__box
+  .picker__calendar-container
+  .clockpicker-plate
+  .clockpicker-canvas-fg.active {
+  fill: rgba(255, 64, 129, 0.5);
+}
+.darktheme
+  .picker__box
+  .picker__calendar-container
+  .clockpicker-plate
+  .clockpicker-canvas-bg {
+  fill: rgba(255, 64, 129, 0.25);
+}
+.darktheme
+  .picker__box
+  .picker__calendar-container
+  .clockpicker-plate
+  .clockpicker-canvas-bg-trans {
+  fill: rgba(255, 64, 129, 0.5);
+}
+.darktheme .picker__box .picker__footer .clockpicker-button:active {
+  background-color: rgba(255, 64, 129, 0.25);
+}
+
+/*----------PARTS ENDS-------------*/

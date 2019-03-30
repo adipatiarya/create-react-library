@@ -1,11 +1,17 @@
 import React from 'react';
-import Example from '../lib';
-import { SecondExample } from '../lib';
+import { Button } from '../lib';
 
 const App = () => (
   <div>
-    <Example />
-    <SecondExample />
+    <Button
+      color="danger"
+      size="xs"
+      onClick={e => {
+        console.log(e);
+      }}
+    >
+      DANGER
+    </Button>
   </div>
 );
 
